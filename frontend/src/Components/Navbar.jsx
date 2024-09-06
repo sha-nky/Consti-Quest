@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav className="bg-blue-600 p-4 shadow-md">
+    <nav className="bg-blue-400 p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-white text-3xl font-bold">Consti-Quest</h1>
         <div>
