@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { Navbar, Footer } from "./Components";
-import { Home } from "./Pages";
+import { Game, Home, Team } from "./Pages";
 
 // import { getAllTestimonials } from "./api/apiCalls";
 
@@ -34,8 +34,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   )

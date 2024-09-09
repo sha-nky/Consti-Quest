@@ -1,16 +1,25 @@
 import React from 'react'
+import '../Styles/Home.css'
+
+import { logo } from '../assets'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav className="bg-blue-400 p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-3xl font-bold">Consti-Quest</h1>
-        <div>
-            <button className="text-white hover:bg-blue-500 p-2 rounded-md">Login</button>
-            <button className="text-white hover:bg-blue-500 p-2 rounded-md ml-4">Sign Up</button>
-        </div>
+    <header className="header">
+      <Link to="/" className='logo'>
+        <img src={logo} alt="Logo" />
+      </Link>
+      <nav className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/team">Team</Link>
+        <Link to="/game">Game</Link>
+      </nav>
+      <div className="icons">
+        <i className="fa-solid fa-bars" id="menu-btn"></i>
       </div>
-    </nav>
+    </header>
   )
 }
 
